@@ -1,0 +1,232 @@
+body, h1, h2, h3, p, a, ul, li, form, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav__logo {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__menu {
+    display: flex;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__item {
+    margin-left: 20px;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav__link.active-link {
+    border-bottom: 2px solid #fff;
+}
+
+/* Main Content */
+.home {
+    background: url('assets/img/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.home__title {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.home__description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #f9c74f;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section__title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Bike Cards */
+.bikes__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.bike__card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.bike__card:hover {
+    transform: scale(1.05);
+}
+
+.bike__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.bike__content {
+    padding: 20px;
+}
+
+.bike__title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.bike__description {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.bike__rental p {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+}
+
+.contact__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact__info {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact__title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact__description {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__input, .contact__textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact__textarea {
+    height: 100px;
+}
+
+.contact__button {
+    background-color: #f9c74f;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.footer__data {
+    padding: 0 20px;
+}
+
+.footer__title, .footer__subtitle {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer__description {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.footer__socials {
+    display: flex;
+}
+
+.footer__social {
+    color: #fff;
+    font-size: 1.5em;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.footer__social:hover {
+    color: #f9c74f;
+}
